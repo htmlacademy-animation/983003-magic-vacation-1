@@ -287,7 +287,6 @@
       outline: none;
 
       &::after {
-        opacity: 1;
         background-color: $c-purple;
         transform-origin: left;
         transform: scaleX(1);
