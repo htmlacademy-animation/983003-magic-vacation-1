@@ -45,9 +45,23 @@
     }
   }
 
+  &:nth-child(1),
+  &:nth-child(2) {
+    .slider__item-text {
+      animation-duration: 0.5s;
+      animation-delay: 0.2s;
+      animation-fill-mode: both;
+
+      .active & {
+        animation-name: fadeInLeft;
+      }
+    }
+  }
+
   &:nth-child(2) {
     .slider__item-text {
       margin-top: 7.8rem;
+      animation-delay: 0.35s;
 
       @media (min-width: $stop-scaling) {
         margin-top: 78px;
@@ -55,10 +69,12 @@
 
       @media (orientation: portrait) {
         margin-top: auto;
+        animation-name: none;
       }
 
       @media (max-width: $mobile) and (orientation: landscape) {
         margin-top: auto;
+        animation-name: none;
       }
     }
   }
