@@ -261,11 +261,6 @@
       */
       transition-delay: 0.1s;
 
-      @media (min-width: $stop-scaling) {
-        left: -5px;
-        right: -5px;
-      }
-
       @media (max-width: $tablet) and (orientation: portrait) {
         left: 0;
         right: 0;
